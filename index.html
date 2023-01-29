@@ -4,10 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Escuela de Voley</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/estilos.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/43be2a7526.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Curriculum Vitae</title>
 </head>
 <body>
+    <nav id="izquierdo">
+        <div class="contenedor">
+            <img class="foto"src="imagenes/foto.jpg" alt="Foto 4x4"></a> 
+        </div>
+        <div class="menu">
+           <a href="#" class="icono"><i class="fa-solid fa-briefcase"></i>Experiencia</a>
+           <a href="#" class="icono"><i class="fa-solid fa-school-flag"></i>Estudios</a>
+           <a href="#" class="icono"><i class="fa-solid fa-book-open-reader"></i>Habilidades</a>
+           <a href="#" class="icono"><i class="fa-solid fa-address-card"></i>Informacion Personal</a>
+        </div>  
+    </nav>
+    <header id="encabezado">
+       <div class="objetivos">
+           <h1>Adan Mauricio Fernandez</h1>
+             <p>Soy una persona proactiva, con buena presencia, responsable, efectiva, autonomo, resolutivo,
+              capaz de trabajar bajo presion y en equipo. 
+              En busca de mejorar mis conocimientos, sumar experiencia y crecer económicamente.
+             </p>
+        </div>  
+        <div id="progreso">
+            <div id="mibarra"></div>
+          </div>    
+    </header>
+    <section id="principal">
+        <div class="experiencia">
+            <ul>
+                <li><h3>Atlántida S.A.C (2017 - actualmente)</h3>
+                   <strong> Coordinador de trafico</strong>
+                      <p>Trabajo en oficina de control, realizo diagramación de personal y unidades,
+                         administración de stock de taller. Control de personal. Utilización de sistemas, 
+                         seguimiento de unidades por GPS, ruteos, planillas y soporte en equipamiento.
+                      </p>
+                    
+                </li>
+                <li>
+                    <h3>Cooperativa Telefónica Tel Viso (2013 - 2017)</h3>
+                      <strong>Operador Técnico</strong>
+                         <p>Comencé como operador Call center en el área de Internet, 
+                            luego pasé a la oficina técnica donde brindaba soporte a técnicos de calle. Configuración de puertos,
+                            Vlan, estudios de velocidad, configuraciones wifi, trabajos en central telefónica reparaciones de pares.
+                        </p>
+
+                </li>  
+                <li>
+                    <h3>Técnico de Informática y dispositivos digitales FreeLancer (Actualmente)</h3>
+                        <p>Instalación de sistemas, diagnostico de errores, clonados, recuperación de datos,
+                           armado de computadoras, diagnóstico y reparación de impresoras. Redes cableadas e inalámbricas.
+                           Diagnóstico y reparación de dispositivos móviles.
+                        </p>
+                </li>            
+            </ul>
+        </div>
+        <div class="estudios">
+            <ul><li>
+                <h3>Estudios Secundarios</h3>
+                <strong>Escuela de Educacion Media N°7</strong>
+                <p>Titulo: Tecnico en computacion</p>
+            </li>
+            <li>
+                <h3>Estudios Universitarios</h3>
+                <strong>Universidad de Jose C. Paz</strong>
+                <p>Carrera: Licenciatura en Gestión de Tecnologías de la información</p>
+                <p>Cursando el segundo año</p>
+            </li>
+        </ul>
+        </div>
+        <div class="habilidades">
+           <ul>
+            <li><h3>Habilidades Blandas</h3>
+            <p>Capacidad de respuesta, Adaptabilidad, Atención a los detalles, Colaboración,
+            Habilidad para las comunicaciones, Resolución de conflictos, Creatividad y Pensamiento crítico.</p>
+            </li>
+            <li><h3>Conocimientos</h3>
+             <p>
+                Hardware, Sistemas operativos de Windows, Resolución de problemas de software,
+                Redes, Seguridad, Dispositivos móviles, Otros sistemas operativos y tecnologías y 
+                Procesos operacionales
+             </p>   
+           </ul>
+        </div>
+
+        <div class="informacion">
+            <img class="entero"src="imagenes/grande.jpg" alt="Adan Mauricio Fernandez" style="width:30%">
+            <div class="container">
+               <h4><b>Adan Mauricio Fernandez</b></h4>
+                 <h5>Tecnico en Informatica</h5>
+                    <p>Estado civil: Casado</p>
+                    <p>Edad: 38</p>
+                    <p>Registro de conducir Profesional</p>
+                    <p>Villa Rosa - Pilar</p>
+                 
+                 <a href="https://www.linkedin.com/in/adanmauriciofernandez"><i class="fa fa-linkedin"></i></a>
+                 <a href="https://www.instagram.com/mauriciofer20305/"><i class="fa fa-instagram"></i></a>
+                 <p><button class="open-button" onclick="openForm()">Contacto</button></p>
+                 <div class="formulario" id="miformulario">
+                    <form action="/action_page.php" class="form-container">
+                      <h1>Login</h1>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                      <button type="submit" class="btn">Login</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                  </div>
+            </div>      
+        </div>
+    </section>
+    
     
 </body>
 </html>
