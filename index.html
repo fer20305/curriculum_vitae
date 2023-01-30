@@ -12,24 +12,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet">
     <title>Curriculum Vitae</title>
-</head>
+</he0ad>
 <body>
+    
     <nav id="izquierdo">
         <div class="contenedor">
             <img class="foto"src="imagenes/foto.jpg" alt="Foto 4x4"></a> 
         </div>
         <div class="menu">
-           <a href="#" class="icono"><i class="fa-solid fa-briefcase"></i>Experiencia</a>
-           <a href="#" class="icono"><i class="fa-solid fa-school-flag"></i>Estudios</a>
-           <a href="#" class="icono"><i class="fa-solid fa-book-open-reader"></i>Habilidades</a>
-           <a href="#" class="icono"><i class="fa-solid fa-address-card"></i>Informacion Personal</a>
+           <a href="#" class="exp" onclick="experiencia()"><i class="fa-solid fa-briefcase"></i>Experiencia</a>
+           <a href="#" class="est" onclick="estudios()"><i class="fa-solid fa-school-flag"></i>Estudios</a>
+           <a href="#" class="hab" onclick="habilidades()"><i class="fa-solid fa-book-open-reader"></i>Habilidades</a>
+           <a href="#" class="info" onclick="informacion()"><i class="fa-solid fa-address-card"></i>Informacion Personal</a>
         </div>  
     </nav>
     <header id="encabezado">
        <div class="objetivos">
-           <h1>Adan Mauricio Fernandez</h1>
-             <p>Soy una persona proactiva, con buena presencia, responsable, efectiva, autonomo, resolutivo,
+           <h1 class="obj">Adan Mauricio Fernandez</h1>
+             <p class="obj">Soy una persona proactiva, con buena presencia, responsable, efectiva, autonomo, resolutivo,
               capaz de trabajar bajo presion y en equipo. 
               En busca de mejorar mis conocimientos, sumar experiencia y crecer económicamente.
              </p>
@@ -39,7 +43,7 @@
           </div>    
     </header>
     <section id="principal">
-        <div class="experiencia">
+        <div class="experiencia" id="exp">
             <ul>
                 <li><h3>Atlántida S.A.C (2017 - actualmente)</h3>
                    <strong> Coordinador de trafico</strong>
@@ -67,7 +71,7 @@
                 </li>            
             </ul>
         </div>
-        <div class="estudios">
+        <div class="estudios" id="est">
             <ul><li>
                 <h3>Estudios Secundarios</h3>
                 <strong>Escuela de Educacion Media N°7</strong>
@@ -81,7 +85,7 @@
             </li>
         </ul>
         </div>
-        <div class="habilidades">
+        <div class="habilidades" id="hab">
            <ul>
             <li><h3>Habilidades Blandas</h3>
             <p>Capacidad de respuesta, Adaptabilidad, Atención a los detalles, Colaboración,
@@ -96,7 +100,7 @@
            </ul>
         </div>
 
-        <div class="informacion">
+        <div class="informacion" id="info">
             <img class="entero"src="imagenes/grande.jpg" alt="Adan Mauricio Fernandez" style="width:30%">
             <div class="container">
                <h4><b>Adan Mauricio Fernandez</b></h4>
@@ -108,25 +112,33 @@
                  
                  <a href="https://www.linkedin.com/in/adanmauriciofernandez"><i class="fa fa-linkedin"></i></a>
                  <a href="https://www.instagram.com/mauriciofer20305/"><i class="fa fa-instagram"></i></a>
-                 <p><button class="open-button" onclick="openForm()">Contacto</button></p>
-                 <div class="formulario" id="miformulario">
-                    <form action="/action_page.php" class="form-container">
-                      <h1>Login</h1>
-                  
-                      <label for="email"><b>Email</b></label>
-                      <input type="text" placeholder="Enter Email" name="email" required>
-                  
-                      <label for="psw"><b>Password</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw" required>
-                  
-                      <button type="submit" class="btn">Login</button>
-                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                    </form>
-                  </div>
+                 <a href="https://api.whatsapp.com/send?phone=541123354035&text=hola,%20¿qué%20tal%20estás?"><i class="fa fa-whatsapp"></i>Mensaje</a>
             </div>      
         </div>
     </section>
+    <button class="open-button" onclick="openForm()">Contacto</button>
+                 <div class="formulario" id="miformulario">
+                    <form action="mailto:fernandez20305@gmail.com" method=post name="formulario" class="form-container">
+                      <h1>Contacto</h1>
+                      <label for="nombre">Nombre</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+                      <label for="apellido">Apellido</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
+
+                      <p><label for="pais">Pais</label>
+                      <select id="country" name="country">
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    </p>  
+                      <p><label for="mensaje">Mensaje</label></p>
+                      <p><textarea id="subject" name="subject" placeholder="Escribe aqui.."></textarea></p>         
+                      <p><button type="submit" class="btn" onclick="enviarformulario()">Enviar</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button></p>
+                    </form>
+                  </div>
     
-    
+    <script src="js/funciones.js"></script>
 </body>
 </html>
